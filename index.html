@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Glass Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginBox" class="glass">
+  <h2> Login</h2>
+  <input type="text" id="user" placeholder="Username">
+  <input type="password" id="pass" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <p id="msg"></p>
+</div>
+
+<!-- MAIN PORTFOLIO -->
+<div id="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar glass">
+  <h2>Jerhick Pancho</h2>
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <button class="logout" onclick="logout()">Logout</button>
+</aside>
+
+<!-- CONTENT -->
+<main>
+
+<section id="home" class="hero">
+  <img src="pancho.jpg" class="profile">
+  <h1>Jerhick Pancho</h1>
+  <p>“I am a student who loves learning new things, especially about computers and games. I am a simple person who believes in hard work and patience. My dream is to become a game developer someday and create something meaningful. I continue to learn, grow, and improve myself every day.”</p>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card"><img src="robot.jpg" onclick="openModal(this.src)"><b>Embedded</b><dd>This is our final project in Embedded System last semester.</dd></div>
+    <div class="card"><img src="diorama.jpg" onclick="openModal(this.src)"><b>Comtemporary</b><dd>This is our project in First year 2nd sem.that we show and present in bahandi festival</dd></div>
+    <div class="card"><img src="presentation.jpg" onclick="openModal(this.src)"><b>Fundamentals of Programming</b><dd>This was the presentation of our final project in fundamentals of programming. and the name of our system is Ticketing System</dd></div>
+    <div class="card"><img src="compilation.jpg" onclick="openModal(this.src)"><b>Intermediate Programming</b><dd>This is our Compilation of activities in Intermediate Programming</dd></div>
+    <div class="card"><img src="entrep.jpg" onclick="openModal(this.src)"><b>Entrepreuership</b><dd>This is our final project in Entrep.it is our start up named PALAYSCAN</dd></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <div class="contact">
+    <div>
+      <p>Email:jerhickpancho26@gmail.com</p>
+      <p>Phone: +63 9512502044</p>
+      <p>Location:Sta Irene Prosperidad Agusan del Sur, Philippines</p>
+    </div>
+  </div>
+</section>
+
+</main>
+</div>
+
+<!-- MODAL -->
+<div id="modal" onclick="closeModal()">
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
